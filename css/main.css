@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --main-text-color: #111517;
     --main-body-color: #f2f2f2;
@@ -37,7 +44,8 @@
 
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 
@@ -67,9 +75,15 @@ header{
 }
 
 .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 24px 0;
 }
 .header-link {
@@ -77,8 +91,12 @@ header{
 }
 
 .header-darkmode {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 16px;
     line-height: 22px;
     padding-left: 28px;
@@ -98,8 +116,12 @@ header{
     background-color: var(--main-body-color);
 }
 .form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 
@@ -113,7 +135,8 @@ header{
     border: 0;
     color: #848484;
     background-color: var(--header-bg-color);
-    box-shadow: 0px 2px 9px #0000000e;
+    -webkit-box-shadow: 0px 2px 9px #0000000e;
+            box-shadow: 0px 2px 9px #0000000e;
     border-radius: 5px;
     background-image: url("../kartinki/search.svg");
     background-size: 18px 18px;
@@ -125,7 +148,8 @@ header{
     display: block;
     width: 18px;
     height: 18px;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     content: "";
 }
 
@@ -133,7 +157,9 @@ header{
     width: 200px;
     height: 56px;
     padding: 18px 24px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     outline: none;
     border: 0;
     color: var(--main-text-color) ;
@@ -148,14 +174,20 @@ header{
     border: 0;
     color: var(--main-text-color) ;
     background: var(--header-bg-color);
-    box-shadow: 0px 2px 9px #0000000e;
+    -webkit-box-shadow: 0px 2px 9px #0000000e;
+            box-shadow: 0px 2px 9px #0000000e;
     border-radius: 5px;
 }
 
 .hero-section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     margin-top: 48px;
     margin-bottom: 0;
@@ -165,7 +197,8 @@ header{
     width: 264px;
     border-radius: 5px;
     background-color: var(--header-bg-color);
-    box-shadow: 0px 0px 7px 2px #00000007;
+    -webkit-box-shadow: 0px 0px 7px 2px #00000007;
+            box-shadow: 0px 0px 7px 2px #00000007;
     border-radius: 5px;
 }
 
@@ -179,7 +212,8 @@ header{
 
 .hero-section-item-img{
     margin-bottom: 24px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     border-radius: 5px 5px 0px 0px;
 }
 .hero-section-item-wrapper-title {
@@ -191,6 +225,8 @@ header{
     margin-bottom: 16px;
 }
 .hero-section-item-wrapper-inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 8px;
     
